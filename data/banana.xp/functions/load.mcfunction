@@ -18,7 +18,7 @@ scoreboard objectives add banana.zero dummy
 scoreboard players set banana.xp banana.zero 0
 
 #run ticks
-schedule clear dsn-xpbottles:tick
-schedule clear dsn-xpbottles:tick_slow
-schedule function dsn-xpbottles:tick 1t
-schedule function dsn-xpbottles:tick_slow 5t
+schedule clear banana.xp:tick
+schedule clear banana.xp:tick_slow
+schedule function banana.xp:tick 1t
+schedule function banana.xp:tick_slow 5t
