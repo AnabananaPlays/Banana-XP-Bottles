@@ -1,2 +1,3 @@
-execute at @a as @s if block ~ ~-0.35 ~ minecraft:brewing_stand run xp add @s -10 points
-execute at @a as @s if block ~ ~-0.35 ~ minecraft:brewing_stand run give @s minecraft:experience_bottle
+#remove 10 xp and give a bottle worth 10 xp
+execute as @s at @s run xp add @s -10 points
+execute as @s at @s run loot give @s loot dsn-xpbottles:blocks/xp_bottle

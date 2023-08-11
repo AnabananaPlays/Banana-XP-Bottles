@@ -1,3 +1,4 @@
-schedule function dsn-xpbottles:breakxp 1t
-execute as @e[type=minecraft:experience_bottle] at @s run summon area_effect_cloud ~ ~ ~ {Passengers:[{id:experience_orb, Value:10}]}
-execute as @e[type=minecraft:experience_bottle] at @s run kill @s 
+#give 10 xp
+execute as @s at @s run summon area_effect_cloud ~ ~-1.5 ~ {Particle:"ambient_entity_effect",Radius:1f,Duration:16,Color:2265694,Passengers:[{id:"experience_orb", Value:10}]}
+#remove xp bottle
+execute as @s at @s run kill @s 

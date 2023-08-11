@@ -1,0 +1,16 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "stepping_on": {
+      "block": {
+        "blocks": [
+          "minecraft:brewing_stand"
+        ]
+      }
+    },
+    "flags": {
+      "is_sneaking": true
+    }
+  }
+}
